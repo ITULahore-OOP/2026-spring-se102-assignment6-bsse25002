@@ -8,6 +8,10 @@ Guild::Guild(string name) {
 
 //Destructor
 Guild::~Guild() {
+    for(int i = 0;i< memberCount;i++) {
+        roster[i] = nullptr;
+    }
+    
     cout << "The guild " << guildName << " has been disbanded!" << endl;
 }
 
